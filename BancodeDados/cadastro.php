@@ -12,9 +12,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $senha = $_POST["senha"];
 
     if($nome == "" || $email == "" || $senha == ""){
-        $erro =  'Preencha todos os campos!';
+        echo 'Preencha todos os campos!';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $erro =  "E-mail inválido!";
+        echo  "E-mail inválido!";
     } else {
         $sql = "SELECT id FROM usuarios WHERE email = ?";
         $stmt = $connection -> prepare($sql);

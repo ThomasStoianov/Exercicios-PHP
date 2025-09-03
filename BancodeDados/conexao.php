@@ -13,7 +13,7 @@ if ($connection->connect_error) {
     die("conexao falhou: " . $connection->connect_error);
 }
 else {
-    echo "Conexão realizada com sucesso!";
+    //echo "Conexão realizada com sucesso!";
 }
 
 ?>
