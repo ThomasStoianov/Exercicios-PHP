@@ -39,11 +39,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 } else {
                     $stmt -> bind_param("sss", $nome, $email, $senhaHash);
                     if ($stmt -> execute()) {
-                        $sucesso = "Cadastro realizado com sucesso!";
+                        echo "Cadastro realizado com sucesso!";
 
                         $nome = $email = "";
                     } else {
                         $erro = "Erro no banco: " . $stmt->error;
+                        echo $erro;
                     }
                     $stmt-> close();
                 }

@@ -32,6 +32,7 @@ if ($result->num_rows > 0) {
         echo "<td>" . $row['email'] . "</td>";
         echo "<td>" . $row['senha'] . "</td>";
         echo "<td><a href='?excluir=" . $row['id'] . "'>Excluir</a></td>";
+        echo "<td><a href='?editar=" . $row['id'] . "'>Editar</a></td>";
         echo "</tr>";
 
     }

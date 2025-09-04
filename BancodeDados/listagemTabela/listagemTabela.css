@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+table {
+    border: 3px solid gray;
+    border-collapse: collapse; /* importante para bordas certas */
+    width: 400px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    height: 50px;
+}
+
+th {
+    background-color: #ccc;     /* cor de fundo para diferenciar o cabeçalho */
+    font-size: 25px;
+}
+
+td {
+    font-size: 20px;
+}
