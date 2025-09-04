@@ -25,4 +25,5 @@ $stmt->close();
 // Redireciona de volta para a tabela
 header("Location: tabelaUsuarios.php");
 exit;
+
 ?>
